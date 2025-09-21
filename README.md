@@ -20,25 +20,27 @@ The project was developed in response to Challenge 1: Land Use for Community Ene
 🚀 How It Works
 The dashboard processes your uploaded data through a series of calculations to generate a final "Score" for each land parcel. This score is a weighted average of key factors, allowing you to identify the most suitable sites quickly.
 
-Scoring Criteria
+🏆🔢🎉 Scoring Criteria
+
 The dashboard calculates a composite score based on the following weighted criteria:
 
-Social: Based on the FuelPovertyIndex. Higher scores are given to areas with greater fuel poverty.
+- Social: Based on the FuelPovertyIndex. Higher scores are given to areas with greater fuel poverty.
 
-Technical: Based on SolarIrradiance. Higher scores are given to parcels with more sunlight.
+- Technical: Based on SolarIrradiance. Higher scores are given to parcels with more sunlight.
 
-Economic: Based on GridDistance. Parcels closer to the grid receive higher scores.
+- Economic: Based on GridDistance. Parcels closer to the grid receive higher scores.
 
-Fairness: Based on ExistingProjects. Areas with fewer existing projects are scored higher to promote equitable distribution
+- Fairness: Based on ExistingProjects. Areas with fewer existing projects are scored higher to promote equitable distribution
 
-Impact Estimates
+📈💹 Impact Estimates
+
 The dashboard also provides key impact metrics based on the data provided:
 
-Energy Production (kWh): Area_m2 x SolarIrradiance x PANEL_EFFICIENCY
+- Energy Production (kWh): Area_m2 x SolarIrradiance x PANEL_EFFICIENCY
 
-Households Supported: Energy_kWh / HOUSEHOLD_CONSUMPTION
+- Households Supported: Energy_kWh / HOUSEHOLD_CONSUMPTION
 
-CO₂ Savings: (Energy_kWh x CARBON_FACTOR) / 1000
+- CO₂ Savings: (Energy_kWh x CARBON_FACTOR) / 1000
 
 🛠️ Setup and Usage
 This dashboard is built using Streamlit, a powerful Python library for creating web applications.
